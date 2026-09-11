@@ -1,0 +1,47 @@
+let someNumber = 33
+let stringNumber = String(someNumber);
+//console.log(typeof(stringNumber));
+
+let Value = 3;
+let negValue = -Value
+//console.log(negValue);
+let str1 = "hello"
+let str2 = "hitesh"
+let str3 = str1 + str2
+//console.log(str3);
+//console.log("1" +2);
+//console.log(1 +"2");
+//console.log("1" +2+2);// output 122
+//console.log(1+2+"2")// output  32
+//console.log(+true);
+let gameCounter = 100
+++gameCounter;
+//console.log(gameCounter);
+//console.log("2" > 1);
+//console.log("02" >1);
+//console.log(null > 0); //here null is equal to 0 so false
+//console.log(null == 0); // this is a loose quality here null is equal to undefined when using ==, not to be 0 false
+//console.log(null >= 0); // 0>= 0 true
+//console.log("2"=== 2);
+// primitive
+// 7 types string number boolean null undefined symbol bigint
+
+// reference (non - primitive)
+// array, objects, functions
+const id = Symbol('123')
+const anotherid = Symbol('123')
+//console.log(id === anotherid)
+
+const bigNumber = 2394932429642969559n
+
+const heros = ["shaktiman", "naagraj", "doga"];
+let myobj = {
+    name: "hitesh",
+    age: 22,
+}
+
+const myFunction = function(){
+    console.log("hello world");
+}
+
+console.log(typeof heros);
