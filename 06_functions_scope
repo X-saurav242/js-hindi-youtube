@@ -1,0 +1,129 @@
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+const {courseInstructor: instructor} = course
+
+//console.log(courseInstructor);
+//console.log(instructor)
+
+// json
+{
+    //"name": "hitesh",
+    //"coursename": "js in hindi",
+    //"price": "free"
+}
+
+[
+   {},
+   {},
+   {}
+]
+
+/* function addTwoNumbers(number1, number2){
+    console.log(number1 + number2)
+} */
+function addTwoNumbers(number1, number2){
+    let result = number1 + number2
+    return result
+    return number1 + number2
+}
+
+const  result = addTwoNumbers(3, "a")
+//console.log("result", result);
+
+function loginUserMessage(username){
+    if(username === undefined){
+        console.log("please enter a username");
+        return
+    }
+    return `${username} just logged in`
+}
+
+//console.log(loginUserMessage("hitesh"))
+//console.log(loginUserMessage())
+
+function calculatecartprice(...num1){
+    return num1
+}
+
+//console.log(calculatecartprice(200, 400, 1000))
+
+const user = {
+    username: "hitesh",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+//handleObject(user)
+/* handleObject({
+    username: "sam",
+    price: 399
+}) */
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnsecondvalue(getArray){
+    return getArray[1]
+}
+
+//console.log(returnsecondvalue(myNewArray));
+//console.log(returnsecondvalue([200, 400, 100, 600]));
+
+// scope
+/* 
+let a = 10
+const b = 20
+var c = 30 */
+let a = 100
+if(true){
+    let a = 10
+    const b = 20
+    var c = 30
+    //console.log("Inner:", a);
+}
+
+//console.log(a);
+//console.log(b);
+//console.log(a);
+//
+function one(){
+    const username = "hitesh"
+    function two(){
+        const website = "youtube"
+        console.log(username);
+    }
+     // console.log(website);
+    two()
+
+}  
+
+if(true) {
+    const username = "hitesh"
+    if(username === "hitesh"){
+        const website = "youtube"
+        //console.log(username + website);
+    }
+    //console.log(website);
+}
+
+//console.log(username);
+
+ // +++++++++++++++ interesting ++++++++++++
+ console.log(addone(2)) // this will execute
+ function addone(num){
+    return num+1
+ }
+
+
+ //console.log(addTwo(5))// this not work because it holds inside the variable
+ const addTwo = function(num){
+    return num+2
+ }
+
+console.log(addTwo(5))
