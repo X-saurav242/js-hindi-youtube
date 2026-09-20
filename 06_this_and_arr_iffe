@@ -1,0 +1,62 @@
+ // this and arrow function
+
+  const javascriptuser = {
+       username: "hitesh",
+       price: 999,
+
+       welcomeMessage: function(){
+          console.log(`${this.username}, welcome to website`);
+          //console.log(this);
+       }
+
+ } 
+
+ javascriptuser.welcomeMessage()
+ javascriptuser.username = "saurav"
+ javascriptuser.welcomeMessage()
+ console.log(this)
+ function chai(){
+    let username = "hitesh"
+    console.log(this.user); // not working inside function
+
+}
+chai() 
+
+ const chai = function () {
+      let username = "hitesh" // this also not working
+      console.log(this.username);
+} 
+
+/* const chai = () => {
+      let username = "hitesh"
+     // console.log(this); // here output is {}
+} */
+
+//chai()
+
+/* const addtwos = (num1, num2) => { // explicit
+    return num1 + num2
+} */
+//const addtwos = (num1, num2) => num1 + num2 // implicit
+//const addtwos = (num1, num2) => ({username: "hitesh"})
+//console.log(addtwos(3, 4))
+
+// immediately invoked function expression (iife)
+
+/*  (function chai(){
+    console.log(`DB CONNECTED`);
+})()
+
+()() */
+/* 
+( function chai(){
+ // na,ed iffe
+    console.log(`DB CONNECTED`);
+}) () */
+
+/* chai(); */    
+// for removing the pollution of global scope we all use iffe
+
+/* ( (name) => {
+    console.log(`DB CONNECTED TWO ${name} `);
+  }) (`hitesh`) */
