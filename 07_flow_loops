@@ -1,0 +1,116 @@
+//  control flow
+
+ // if
+
+/* const temperature = 41
+if(temperature <50){
+    console.log("less than 50")
+} */
+ // <, > <=, >=, ==, !=, ===, !==
+
+// const scores = 200
+
+ /* if(scores > 100){
+    const power = "fly"
+    //console.log(`user power: ${power}`);
+ } */
+
+//console.log(`user power: ${power}`);  // power is not defined if we use var instead of const 
+
+ //const balance = 1000
+
+ // if (balance>500) console.log("test"), console.log("test2");
+
+/*  if(balance < 500){
+        console.log("less than 500");
+ } else if(balance < 750){
+    console.log("less than 750")
+ } else if(balance < 1000){
+    console.log("less than 1000")
+ } else{
+    console.log("balance");
+ } */
+
+const userEmail = ""
+
+/* if(userEmail){
+    console.log("got user email");
+} else {
+    console.log('dont have user email');
+} */
+
+// falsy values 
+
+//false , 0, -0, BigInt  on, null undefined, NaN 
+
+
+// truthly values
+
+// "0", 'false', " ", [], {}, function(){}
+
+/* if(userEmail.length === 0){
+      console.log("Array is empty");
+} */
+
+/* const emptyObj = {}
+
+if(Object.keys(emptyObj).length === 0){
+    console.log("object is empty");
+} */
+
+// nullish coalescing operator (??): null undefined
+
+let val1;
+//val1 = 5 ?? 10
+//val1 = null??10
+//val1 = null??10??20
+
+//console.log(val1);
+// ternary operator
+
+const iceteaPrice = 555
+//iceteaPrice <=80 ? console.log("less than 80") : console.log("more than 80")
+
+
+// for loop with break and continue in javascript
+/* for( let i =0;i<10;i++){
+    const element = i;
+    if(element ==5){
+        console.log("5 is best number")
+    }
+    console.log(element);
+} */ 
+
+/* for(let i =0; i<=10;i++){
+    console.log(`outer loop value: ${i}`);
+    for(let j = 0;j<=10;j++){
+        //console.log(`inner loop value ${j} and inner loop ${i}`);
+        console.log(i+ '*' +j+ ' = ' +i*j);
+    }
+} */
+
+for(let index = 1; index<=20; index++){
+    if(index == 5){
+        console.log(`detected 5`);
+        break
+    }
+    console.log(`value of i is ${index}`);
+
+}  
+
+//while and do while loop
+
+/* let index = 0;
+while(index<= 10){
+    //console.log(`value of index is ${index}`);
+    index = index+2
+} */
+
+/* let myArray = ['flash', "batman", "superman"]
+
+let arr = 0
+
+while(arr< myArray.length){
+    console.log(`value is ${myArray[arr]}`);
+    arr  = arr+1
+} */
