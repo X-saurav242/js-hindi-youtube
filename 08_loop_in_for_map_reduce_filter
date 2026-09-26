@@ -1,0 +1,166 @@
+/ for of loops    
+
+/* const arr = [1,2,3,4,5]
+
+for(const num of arr) {
+    console.log(num);
+}
+ 
+const greetings = "helloworld!"
+for(const greet of greetings) {
+    console.log(`each char is ${greet}`)
+} */
+
+// Maps // stores unique key value pairs
+/* 
+ const map  = new Map()
+map.set('in', "india")
+map.set('usa', "united state of america")
+map.set('fr', "france")
+
+//console.log(map);
+
+ for(const [key, value] in map){
+    console.log(key); // not iterable of loops on map
+} */ 
+
+/* const myobject = {
+    'game1': 'NFS',
+    'game2': 'spiderman'
+} 
+
+const myObject = {
+    js: 'javascript',
+    cpp: 'c++',
+    rb: "ruby",
+    swift: "swift by apple"
+}
+
+for (const key in myObject) {
+    console.log(`${key} shortcut is for ${myObject[key]}`);
+} 
+
+
+/*  const programming = ["js", "rb", "py", "java", "cpp"]
+
+for(const key in programming){
+    console.log(key)
+} */ 
+
+/* const coding = ["js", "ruby", "java", "python", "cpp"]
+
+ coding.forEach(function (val) {
+        console.log(val);
+})  */ // callback function
+
+/* coding.forEach( (item) => {
+    console.log(item);
+}) */
+
+/* function printMe(item){
+    console.log(item);
+} */
+
+//coding.forEach(printMe)
+
+
+/* coding.forEach((item, index, arr)=> {
+    console.log(item, index, arr);
+}) */
+
+
+/* const myCoding = [
+    {
+        LanguageName: "javascript",
+        LanguageFileName: "js"
+    },
+    {
+      LanguageName: "java",
+      LanguageFileName: "java"   
+    },
+    {
+      LanguageName: "python",
+      LanguageFileName: "py"   
+    }
+]
+
+myCoding.forEach((object) => {
+    console.log(object);
+})  */
+
+// filter map and reduce in javascript
+
+/* const coding = ["js", "ruby", "java", "python", "cpp"]
+
+const values = coding.forEach( (item) => {
+      console.log(item);
+      return item
+})
+
+console.log(values); */
+
+//const myNums = [1,2,3,4,5,6,7,8,9,10]
+
+/* const newNums = myNums.filter((num) =>  num > 4 // if we use scope we have to use
+) */
+
+/* const newNums = []
+
+myNums.forEach( (num) => {
+    if(num>4){
+        newNums.push(num)
+    }
+}) */
+
+//const userbooks = books.filter( (bk) => bk.genre === 'history')
+ //const uerbooks = books.filter( (bk) => bk.publish === 'history')
+//console.log(newNums);
+
+/* const student = {
+    name: "Saurav"
+};
+
+student.name = "Rahul"; */  // ✅ Allowed
+
+// student = {};         // ❌ Not allowed
+
+//console.log(student)
+// map is a callback function
+
+const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+//const newNums = myNums.map( (num) => {return num+10})
+// chaining
+//const newNums = myNumbers.map((num) => num *10).map((num) => num + 1 ).filter((num) => num>= 40)
+
+//console.log(newNums);
+
+// reduce
+
+const myNums = [1, 2, 3]
+
+/* const myTotal = my_Nums.reduce(function (acc, currval) {
+    console.log(`acc: ${acc} and currval: ${currval}`);
+    return acc + currval
+}, 0) */
+
+const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
+
+//console.log(myTotal)
+
+const shoppingCart = [
+    {
+       itemName: "js course",
+       price: 2999
+    },
+    {
+        itemName: "py course",
+        price: 999
+    },
+    {
+        itemName: "java course",
+        price: 2999
+    }
+]
+
+const price = shoppingCart.reduce((acc, items) => acc+ items.price, 0)
