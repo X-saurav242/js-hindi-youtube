@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>dom learning</title>
+</head>
+<style>
+    .bg-black{
+        background-color: black;
+        color: #fff;
+    }
+</style>
+<body class ="bg-black">
+    <div>
+      <h1  id="title" class ="heading">dom learning on chai aur code</h1>
+      <h2>Lorem, ipsum dolor.</h2>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+      <p>lorem ipsum dolor sit amet.</p>
+      <ul>
+        <li class ="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class ="list-item">three</li>
+      </ul>
+    </div>
+</body>
+</html>
+// console.log code
+Uncaught SyntaxError: Missing initializer in const declaration (at VM364:1:7)
+const tempclasslist = document.getElementByClassName('list-item')
+VM611:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:32
+(anonymous) @ VM611:1
+const temp = document.getElementByClassName('list-item')
+VM797:1 Uncaught TypeError: document.getElementByClassName is not a function
+    at <anonymous>:1:23
+(anonymous) @ VM797:1
+const tempclasslist = document.getElementsByClassName('list-item')
+undefined
+tempclasslist
+HTMLCollection(3) [li.list-item, li.list-item, li.list-item]
+Array.from(tempclasslist)
+(3) [li.list-item, li.list-item, li.list-item]
+const myConvertedArray = Array.from(tempclassList)
+VM1454:1 Uncaught ReferenceError: tempclassList is not defined
+    at <anonymous>:1:37
+(anonymous) @ VM1454:1
+myConvertedArray = Array.from(tempclasslist)
+VM1657:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:18
+(anonymous) @ VM1657:1
+const myConvertedArray = Array.from(tempclasslist)
+undefined
+myConvertedArray
+(3) [li.list-item, li.list-item, li.list-item]
+myConvertedArray.forEach(function(li){
+    li.style.color = 'orange'})
+undefined
