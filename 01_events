@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body>
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width ="200px" id="photoshop" src="https://www.adobe.com/in/cc-shared/fragments/products/photoshop/personalization/marquee/media_159818ecda497397cc4ce6e5460cf58008a35abb1.png?width=750&format=webply&optimize=medium" alt="photoshop"</li>
+            <li><img width="200px" id="japan" src="https://media.istockphoto.com/id/876560704/photo/fuji-japan-in-spring.jpg?s=612x612&w=0&k=20&c=j1VZlzfNcsjQ4q4yHXJEohSrBZJf6nUhh2_smM4eioQ=" alt=""></li>
+            <li><a style="color:black;" href="https://google.com" id="google">google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+      /* document.getElementById('japan').onclick = function(){
+        alert("japan clicked")
+    }  
+       document.getElementById('japan').addEventListener('click', function(){
+        alert("japan clicked again")
+    })   
+    // attachevent()
+    //jQuery - on
+     document.getElementById('japan').addEventListener('click', function(e){
+          console.log(e);
+    }, false) 
+    // type, timestamp, defaultprevented
+    // target, to element, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keycode
+    // event propogation
+     document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside th ul");
+    }, false)  // false bubbling true capturing
+     document.getElementById('japan').addEventListener('click', function(e){
+        console.log("japan clicked");
+        e.stopPropagation()
+    }, false)
+     document.getElementById('google').addEventListener('click', function(e){
+      e.preventDefault();
+      console.log("google clicked");
+    }, false) */ 
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeit = e.target.parentNode
+            removeit.remove()
+        }
+    })
+</script>
+</html>
