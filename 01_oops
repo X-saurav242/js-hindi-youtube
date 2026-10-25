@@ -1,0 +1,34 @@
+const user = {  // object literals
+    username: "hitesh",
+    loginCount: 8,
+    signedIn: true,
+
+    getUserDetails: function(){
+        //console.log("got user detailss from database");
+        //console.log(`Username: ${this.username}`);
+        //console.log(this);
+    }
+}
+
+//console.log(user.username);
+//console.log(user.getUserDetails());
+//console.log(this);
+
+//const promiseOne = new Promise()
+//const date = new Date()
+
+function User(username, logincount, isLoggedIn){
+       this.username = username;
+       this.loginCount = logincount;
+       this.isLoggedIn = isLoggedIn
+
+      // return this
+      this.greeting = function(){
+        console.log(`welcome ${this.username}`);
+      }
+}
+
+const userone = new User("hitesh", 12, true)
+const usertwo = new User("chaiaurcode", 11, false)
+console.log(userone.constructor);
+console.log(usertwo);
